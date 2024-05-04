@@ -10,11 +10,9 @@ repositories {
 }
 
 dependencies {
+    testImplementation("com.google.truth:truth:1.4.2")
     testImplementation(kotlin("test"))
-}
-
-tasks.test {
-    useJUnitPlatform()
+    testImplementation("junit:junit:4.13.2")
 }
 kotlin {
     jvmToolchain(17)
